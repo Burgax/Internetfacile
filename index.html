@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
+  <title>internetfacile.it</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/headerstyle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+  <div class="loader">
+    <video autoplay muted loop id="video-back">
+      <source src="img/loader.mp4" type="video/mp4">
+    </video>
+    <div></div>
+  </div>
+
+
+  <div class="content">
+    <header>
+      <div class="logo">
+        <object data="img/logo_vet.svg" type="image/svg+xml" height="70" width="70">
+          <img src="img/logo.png" alt="Immagine PNG alternativa" height="50" width="130">
+        </object>
+
+      </div>
+      <ul class="menu">
+        <li><a href="" class="normal-text active">Home</a></li>
+        <li><a href="" class="normal-text">Enciclopedia</a></li>
+        <li><a href="" class="normal-text">Contatti</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <footer>
+      <ul class="social_icon">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+      </ul>
+      <ul class="footer__menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Enciclopedia</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Fonti</a></li>
+      </ul>
+    <p>  Copyright &copy; Burgarello Gabriele 2022</p>
+
+
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!-- JAVA -->
+
+  <!-- loading -->
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      $(".loader").fadeOut(3000);
+      $(".content").fadeIn(3000);
+
+
+    })
+  </script>
+  <!-- menu telefono -->
+  <script>
+    $(document).ready(function() {
+
+      /* Open Panel */
+      $(".hamburger").on('click', function() {
+        $(".menu").toggleClass("menu--open");
+      });
+      $(".oc").on('click', function() {
+        $(".menu").removeClass("menu--open")
+      });
+
+
+    });
+  </script>
+</body>
+
+</html>
