@@ -16,8 +16,6 @@ body{
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   color: #000;
-  display: flex; align-items: flex-end;
-  overflow: hidden;
 }
 
 
@@ -81,7 +79,11 @@ li{list-style: none;}
       width: 100%;
     }
   }
-
+/* ! Hero */
+.hero{
+  height: 100vh;
+  border: 1px solid red;
+}
 
   /* ! Footer */
   footer{
