@@ -1,14 +1,16 @@
 /* ! Header */
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   padding: 15px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  max-width: 1500px;
 }
 
 .logo {
